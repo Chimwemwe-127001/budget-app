@@ -21,7 +21,7 @@ _To get a local copy up and running follow these simple steps._
    ```
 2. Goto project directory
    ```sh
-   cd recipe-app
+   cd budget-app
    ```
 
 3. Configure `database.yml` in the config folder according to your postgreSQL configuration
