@@ -6,6 +6,8 @@
 ----
 _[Here](https://www.loom.com/share/4bc23cd75bc44f6d8c7563c24c516afd) is the link to the project presentation video_
 
+_[Here](https://mighty-sierra-61747.herokuapp.com/) is the link to the live demo_
+
 ---
   Splash Screen                                              |  Login Page
 :-----------------------------------------------------------:|:---------------------------------------------------------:
