@@ -10,6 +10,7 @@
 
     <!-- Main CSS -->
     <link rel="stylesheet" href="../assets/stylesheets/application.css">
+    
     <title>BudgetApp</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -19,12 +20,10 @@
   </head>
 
   <body>
+    <%= render "navbar/navbar" %>
+    <br>
     <div class="container">
-      <% if notice %>
-        <%= render 'layouts/alerts' %>
-      <% elsif alert %>
-        <%= render 'layouts/alerts' %>
-      <% end %>
+      <%= render 'layouts/alerts' %>
     </div>
     <%= yield %>
 
