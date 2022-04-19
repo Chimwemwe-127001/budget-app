@@ -7,7 +7,7 @@ RSpec.describe User, type: :model do
 
     @user.save
 
-    @group = Group.new(name: 'Group one', icon: 'home')
+    @group = Group.new(name: 'Group one')
 
     @group.save
 

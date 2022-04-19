@@ -6,12 +6,12 @@
 
       <div class="mb-3">
         <%= f.label :name, "Name", class: "form-label fs-6" %><br>
-        <%= f.text_field :name, :placeholder => "Add Full name...", required: true, class: "form-control" %><br>
+        <%= f.text_field :name, :placeholder => "Add Full name...", required: true, class: "form-control", required: true %><br>
       </div>
 
       <div class="mb-3">
         <%= f.label :email, class: "form-label fs-6" %><br />
-        <%= f.email_field :email, autofocus: true, autocomplete: "email", class: 'form-control' %>
+        <%= f.email_field :email, autofocus: true, autocomplete: "email", class: 'form-control', required: true %>
       </div>
 
       <div class="mb-3">
@@ -19,12 +19,12 @@
         <% if @minimum_password_length %>
         <em>(<%= @minimum_password_length %> characters minimum)</em>
         <% end %><br />
-        <%= f.password_field :password, autocomplete: "new-password", class: 'form-control' %>
+        <%= f.password_field :password, autocomplete: "new-password", class: 'form-control', required: true %>
       </div>
 
       <div class="mb-3">
         <%= f.label :password_confirmation, class: "form-label fs-6" %><br />
-        <%= f.password_field :password_confirmation, autocomplete: "new-password", class: 'form-control' %>
+        <%= f.password_field :password_confirmation, autocomplete: "new-password", class: 'form-control', required: true %>
       </div>
       <br>
       <div class="d-grid gap-2">

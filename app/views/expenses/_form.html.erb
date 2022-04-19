@@ -5,7 +5,7 @@
     <%= render "devise/shared/error_messages", resource: expense %>
     <div class="container">
       <%= form.text_field :name, autofocus: true, placeholder: "Name", class: "form-control m-2", required: true %>
-      <%= form.number_field :amount, placeholder: "Amount", class: "form-control  m-2", required: true %>
+      <%= form.number_field :amount, placeholder: "Amount", class: "form-control  m-2", required: true, step: 'any' %>
       <%= form.collection_select :group_ids, current_user.groups.order(:name), :id, :name, {}, { class: "form-select  m-2", multiple: true, required: true } %>
     </div>
 

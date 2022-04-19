@@ -22,7 +22,7 @@ RSpec.feature 'Groups', type: :feature do
   scenario 'add new category' do
     click_link 'Add a new category'
     fill_in 'Name', with: 'Test'
-    fill_in 'Icon', with: 'https://i.pinimg.com/736x/aa/f7/05/aaf705e06726ce3881288ae4be3ac5fe.jpg'
+    attach_file('Image', 'app/assets/images/login_page.png')
     click_button 'Save'
     expect(page).to have_content('Test')
     expect(page).to have_button('Delete')
@@ -31,7 +31,7 @@ RSpec.feature 'Groups', type: :feature do
   scenario 'go to created category' do
     click_link 'Add a new category'
     fill_in 'Name', with: 'Test'
-    fill_in 'Icon', with: 'https://i.pinimg.com/736x/aa/f7/05/aaf705e06726ce3881288ae4be3ac5fe.jpg'
+    attach_file('Image', 'app/assets/images/login_page.png')
     click_button 'Save'
     click_link 'Test'
     expect(page).to have_content('Total Amount:')
@@ -40,7 +40,7 @@ RSpec.feature 'Groups', type: :feature do
   scenario 'add new category' do
     click_link 'Add a new category'
     fill_in 'Name', with: 'Test'
-    fill_in 'Icon', with: 'https://i.pinimg.com/736x/aa/f7/05/aaf705e06726ce3881288ae4be3ac5fe.jpg'
+    attach_file('Image', 'app/assets/images/login_page.png')
     click_button 'Save'
     click_link 'Test'
     click_link 'Add new transaction'

@@ -7,7 +7,7 @@ RSpec.describe Group, type: :model do
 
     @user.save
 
-    @group = Group.new(name: 'Group one', icon: 'Home')
+    @group = Group.new(name: 'Group one')
 
     @group.save
 
@@ -21,11 +21,6 @@ RSpec.describe Group, type: :model do
   it 'should have a name' do
     @group.name
     expect(@group.name).to eq('Group one')
-  end
-
-  it 'should have an icon' do
-    @group.icon
-    expect(@group.icon).to eq('Home')
   end
 
   it 'should have expenses' do
