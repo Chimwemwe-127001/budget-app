@@ -9,7 +9,7 @@ _[Here](https://www.loom.com/share/4bc23cd75bc44f6d8c7563c24c516afd) is the link
 ---
   Splash Screen                                              |  Login Page
 :-----------------------------------------------------------:|:---------------------------------------------------------:
-![screenshot](./app/assets/images/splash_screen.png)         |   ![screenshot](./app/assets/images/login_page.png)
+![screenshot](./app/assets/images/splash_screen.gif)         |   ![screenshot](./app/assets/images/login_page.png)
   Transactions Page                                          |  Categories Page
 ![screenshot](./app/assets/images/transactions_page.png)     |   ![screenshot](./app/assets/images/categories_page.png)
 
